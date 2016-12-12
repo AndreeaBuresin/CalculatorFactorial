@@ -27,54 +27,54 @@ namespace CalculatorFactorial
 
         private void button2_Click(object sender, EventArgs e)
         {
-            this.button2.Text += "2";
+            this.textBoxInsert.Text += "2";
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
-            this.button3.Text += "3";
+            this.textBoxInsert.Text += "3";
         }
 
         private void button4_Click(object sender, EventArgs e)
         {
-            this.button4.Text += "4";
+            this.textBoxInsert.Text += "4";
         }
 
         private void button5_Click(object sender, EventArgs e)
         {
-            this.button5.Text += "5";
+            this.textBoxInsert.Text += "5";
         }
 
         private void button6_Click(object sender, EventArgs e)
         {
-            this.button6.Text += "6";
+            this.textBoxInsert.Text += "6";
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
-            this.button7.Text += "7";
+            this.textBoxInsert.Text += "7";
         }
 
         private void button8_Click(object sender, EventArgs e)
         {
-            this.button8.Text += "8";
+            this.textBoxInsert.Text += "8";
         }
 
         private void button9_Click(object sender, EventArgs e)
         {
-            this.button9.Text += "9";
+            this.textBoxInsert.Text += "9";
         }
 
         private void button10_Click(object sender, EventArgs e)
         {
-            this.button10.Text += "0";
+            this.textBoxInsert.Text += "0";
         }
 
         private void delete_Click(object sender, EventArgs e)
         {
             try
             {
-                this.buttonDelete.Text = this.buttonDelete.Text.Remove(this.buttonDelete.Text.Length - 1);
+                this.textBoxInsert.Text = this.textBoxInsert.Text.Remove(this.textBoxInsert.Text.Length - 1);
             }
             catch
             {
@@ -86,7 +86,7 @@ namespace CalculatorFactorial
         {
             try
             {
-                this.FactButton.Text = "" + do_calcFact(int.Parse(FactButton.Text));
+                this.textBoxResult.Text = "" + do_calcFact(int.Parse(textBoxInsert.Text));
             }
             catch
             {
